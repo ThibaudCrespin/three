@@ -1,0 +1,33 @@
+{
+  "name": "cours2",
+  "version": "1.0.0",
+  "description": "Cours de three.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors",
+    "build": "NODE_ENV=production webpack --progress --colors",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThibaudCrespin"
+  },
+  "author": "Thibaud Crespin",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.7",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "dependencies": {
+    "dat.gui": "^0.6.1",
+    "gsap": "^1.20.2",
+    "stats.js": "^0.17.0",
+    "three": "^0.87.1"
+  }
+}
